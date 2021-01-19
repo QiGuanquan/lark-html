@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/jquery.lineProgressbar.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     </head>
 
     <body>
@@ -452,6 +454,43 @@
         </section>
 
         <!-- 5.产品方案-->
+        <section class="product">
+            <div class="product-plan">
+                <div class="product-plan-title">
+                    <h1>众多优秀企业的信赖之选</h1>
+                    <h5>精选自不同行业的客户案例，助力开启高效愉悦的办公之旅</h5>
+                </div>
+                <div class="product-plan-top">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                          <div class="swiper-slide">Slide 5</div>
+                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">Slide 7</div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div>
+                          <div class="swiper-slide">Slide 10</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                </div>
+                <!-- <div class="product-plan-down">
+                    <div class="slide-btn"></div>
+                    <div class="slide-btn"></div>
+                    <div class="slide-btn"></div>
+                    <div class="slide-btn"></div>
+                    <div class="slide-btn"></div>
+                    <div class="slide-btn"></div>
+                </div> -->
+            </div>
+        </section>
 
         <!-- 6.数据 -->
         <section class="cropium-counterup-section padding-top-120">
@@ -518,6 +557,16 @@
         </section>
 
         <!--7.客户案例：放图标-->
+        <section class="customer-title">
+            <div class="heraRender_component">
+                <h2 class="heraComp_title">与更多优秀企业一起高速成长</h2>
+            </div>
+        </section>
+        <section class="customer-case">
+            <div class="customer-content">
+                <img class="heraComp_image" src="" alt="">
+            </div>
+        </section>
 
         <!-- Pricing Section Starts -->
         <!-- <section class="cropium-pricing-section padding-top-90 padding-bottom-90">
@@ -1282,5 +1331,24 @@
         <script src="assets/js/vendor/easing.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          </script>
     </body>
 </html>
